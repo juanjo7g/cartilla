@@ -325,10 +325,8 @@ if(hasRightVersion) {  // if we've detected an acceptable version
 		'salign', ''
 		); //end AC code
 } else {  // flash is too old or we can't detect the plugin
-	var alternateContent = '<p>Este contenido requiere esta version o mas alta: '
-		+ requiredMajorVersion + '.' + requiredMinorVersion + '.' + requiredRevision + ' '
-		+ ' de Adobe Flash Player.</p>'
-		+ '<a href="http://www.adobe.com/go/getflashplayer/">¡Descarga Flash!</a>';
+	var alternateContent = '<pDebes descargar o habilitar Flash Player.</p>'
+		+ '<a href="http://www.adobe.com/go/getflashplayer/">¡Descarga o habilita Flash!</a>';
 	document.write(alternateContent);  // insert non-flash content
 }
 // -->
